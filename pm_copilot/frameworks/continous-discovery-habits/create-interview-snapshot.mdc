@@ -1,0 +1,67 @@
+---
+alwaysApply: false
+---
+
+# Role: Extracting Insights from Qualitative Interviews and User Tests (Continuous Discovery Habits)
+
+## Goal
+
+Guide the AI assistant to extract meaningful insights from qualitative interviews or user test sessions by creating **interview snapshots** that capture specific stories, behaviors, and opportunities following the *Continuous Discovery Habits* methodology.
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/interview-snapshots/` (or as specified by the user)
+- **Filename pattern:** `interview-snapshot-<participant-or-segment>-<yyyymmdd>.md`
+
+Each snapshot file should be self-contained and easy to scan.
+
+## Process
+
+1. **Receive interview data**
+   - Accept raw transcripts, notes, or user test observations.
+   - If key context is missing (who, when, product area), briefly ask the user to provide it.
+
+2. **Identify context**
+   - Capture: participant role, segment, date, product area, and scenario (why this interview/test was run).
+   - Note any hypotheses or research questions given by the user.
+
+3. **Extract stories**
+   - Isolate **concrete episodes** (what actually happened) rather than opinions.
+   - For each story, capture: situation, trigger, actions taken, outcome, and emotional cues.
+
+4. **Map experience**
+   - Place stories along a simple journey (e.g. trigger → searching → deciding → using → resolving issues).
+   - Highlight points of friction, confusion, or delight.
+
+5. **Identify opportunities**
+   - Convert pains and gaps into **opportunity statements** (problem-focused, solution-agnostic).
+   - Use a pattern like: “Users who \<context\> struggle to \<desired outcome\> because \<obstacle\>.”
+
+6. **Capture insights**
+   - Distill 3–7 key insights tied to behavior, not opinions about ideal solutions.
+   - Link each insight back to one or more specific stories.
+
+7. **Create snapshot**
+   - Organize the output under clear headings (see “Snapshot structure” below).
+   - Keep it concise and skimmable with bullets and short paragraphs.
+
+8. **Save or present document**
+   - Present the full snapshot in Markdown.
+   - If the user has a file path or naming convention, adapt to it.
+
+## Story extraction guidelines
+
+Focus on extracting:
+- **Specific instances:** concrete moments in time (“When I tried to… yesterday…”).
+- **Actual behavior:** what they did, step by step.
+- **Context details:** tools, environment, constraints, collaborators.
+- **Emotional moments:** frustration, confusion, relief, excitement.
+- **Workarounds:** hacks, spreadsheets, copy-paste flows, shadow tools.
+- **Failed attempts:** what they tried that did not work and why.
+
+Avoid capturing:
+- Generalizations without examples (“I always…”, “Users usually…”).
+- Hypotheticals (“If I had X, then I would…”).
+- Feature requests stated as solutions (“You should add a button that…”).
+- Opinions about ideal solutions that are not grounded in observed behavior.

@@ -1,0 +1,77 @@
+---
+description: Help define success metrics for idea validation, focusing on North Star and input vs output metrics
+alwaysApply: false
+---
+
+# Idea Validation – Define Success Metrics
+
+- **When to use**: The user is shaping or refining a PRD or idea validation plan and needs **clear, actionable success metrics**.
+- **Primary focus**: Clarify the **North Star Metric** and a small set of **input metrics** that drive it, while keeping **output metrics** in view.
+
+## Goal
+
+By the end of the interaction, the user should have:
+- A well-articulated **North Star Metric**.
+- 2–5 **input (leading) metrics** that they can influence in the near term.
+- Clear links from input metrics to **output (lagging) metrics** and business outcomes.
+
+## Key concepts to apply
+
+- **North Star Metric (NSM)**:
+  - One metric that best captures the **core value** the product delivers to users.
+  - Should reflect **user value**, not just internal activity.
+  - Everything else (features, campaigns, experiments) is a **lever** to move this metric.
+
+- **Output (lagging) metrics**:
+  - Outcomes you ultimately care about (e.g. revenue, churn, LTV, NRR).
+  - They move more slowly and are influenced by many factors.
+
+- **Input (leading) metrics**:
+  - User behaviors or product usage patterns that **drive** the outputs (e.g. activation rate, feature adoption, weekly active teams, completion rate of key workflow).
+  - These are what the team can **directly influence** with product changes and experiments.
+
+In PRDs, prioritize **input metrics** as targets, and **explicitly connect** them to the relevant output metrics.
+
+## Process
+
+1. **Clarify product value and lifecycle**
+   - Ask what core value the product delivers and at what key moments (e.g. onboarding, first success, repeat usage).
+   - Identify the most important **user actions** that represent value being realized.
+
+2. **Define or refine the North Star Metric**
+   - Propose candidate NSMs based on the product’s value (e.g. “weekly active teams completing X workflow”, “messages sent per active workspace per week”).
+   - Ensure the NSM:
+     - Reflects **value to users**, not just internal output.
+     - Is **measurable and segmentable** (by cohort, plan, product area).
+     - Can be reasonably **influenced over time** by the team.
+
+3. **Map output metrics**
+   - Ask which **business outcomes** matter most for this initiative (e.g. revenue, churn, expansion, NPS).
+   - List 1–3 key **output metrics** related to the idea or PRD.
+
+4. **Identify input metrics**
+   - For each output metric and for the NSM, identify **leading behaviors** that drive them (e.g. activation, feature adoption, depth of usage, collaboration behaviors).
+   - Turn these into **concrete, measurable input metrics** (e.g. “% of new users who complete onboarding within 1 day”, “# of teams that use feature X weekly”).
+   - Keep the list focused: **2–5 input metrics** per PRD.
+
+5. **Connect input to output**
+   - For each input metric, explicitly note which **output metric(s)** it is expected to influence.
+   - Encourage the user to phrase this as a simple mapping (e.g. “If we increase activation from 40% → 60%, we expect churn to decrease because…”).
+
+6. **Set targets and time horizons**
+   - Help the user set **realistic, directional targets** (e.g. “increase activation from 30% → 45% in 1 quarter”).
+   - Emphasize that for early idea validation, **directional improvement** and learning are often more important than exact numbers.
+
+7. **Summarize in a metrics section**
+   - Produce a concise Markdown section like:
+     - **North Star Metric**
+     - **Output Metrics**
+     - **Input Metrics & Links to Outputs**
+   - Keep it skimmable with bullets and short explanations.
+
+## Quality bar
+
+- Metrics are **specific, measurable, and behavior-driven**, not vague (“increase engagement”).
+- The **North Star Metric** clearly reflects user value and is not just vanity.
+- Each input metric is clearly **linked** to one or more output metrics.
+- The resulting section is easy for stakeholders to read and **immediately usable** in a PRD or experiment plan.

@@ -1,3 +1,75 @@
 ---
-alwaysApply: true
+description: Framework for creating lean PRDs for idea validation
+alwaysApply: false
 ---
+
+# Idea Validation – Create PRD
+
+- **When to use**: The user wants to turn a product idea or opportunity into a **lean PRD** focused on learning and validation (not a big, waterfall spec).
+- **Scope**: Work only on **one idea / opportunity** at a time. If the user mixes several ideas, first help them pick or split into separate PRDs.
+
+## Goal
+
+Guide the user to a concise PRD that:
+- Clarifies the **problem, users, and desired outcome**.
+- States the **hypotheses and assumptions** to validate.
+- Defines a **smallest-viable experiment / MVP** to test the idea.
+- Captures **risks, metrics, and decision criteria** for whether to proceed.
+
+## Required inputs
+
+Before drafting, make sure you understand:
+- The **product / domain** and target **user / segment**.
+- The **problem or opportunity** the idea is addressing.
+- Any **existing insights** (user research, data, feedback).
+
+If any of this is missing, ask **2–4 focused questions** to fill the gaps before writing the PRD.
+
+## PRD structure
+
+Produce the PRD as Markdown with clear sections such as:
+- **1. Context & Background**
+- **2. Problem & Target Users**
+- **3. Goals & Success Metrics**
+- **4. Hypotheses & Key Assumptions**
+- **5. Proposed Solution (Concept)**
+- **6. Validation Plan / MVP**
+- **7. Risks & Open Questions**
+
+Tailor headings slightly to the user’s company style if they share an example.
+
+## Process
+
+1. **Clarify the problem**
+   - Rephrase the idea as a **problem statement** focused on users and outcomes.
+   - Push back gently if the user jumps straight to features without a clear problem.
+
+2. **Define goals and metrics**
+   - Ask what success looks like in terms of **user behavior** and **business impact**.
+   - Suggest 2–4 concrete, measurable indicators (activation, conversion, retention, NPS, task success, etc.).
+
+3. **Capture hypotheses**
+   - Turn assumptions into explicit **hypothesis statements** (format like: “We believe that… for… will result in…”).
+   - Highlight the **riskiest assumptions** first (value risk, usability, feasibility, viability).
+
+4. **Shape a lean solution**
+   - Propose a **minimal, testable concept**, not a full-blown product.
+   - Offer 2–3 options when there are clear trade-offs, and briefly compare them.
+
+5. **Design the validation / MVP plan**
+   - Suggest **smallest experiments**: prototypes, fake-door tests, concierge, A/B tests, usability tests, etc.
+   - For each experiment, specify: objective, method, who, sample size (rough), timeline, and what decision it will inform.
+
+6. **Write the PRD**
+   - Fill in all sections in a **concise, skimmable** way (bullets over long paragraphs).
+   - Use the user’s terminology (product, team, metrics) where possible.
+
+7. **Review and iterate**
+   - End with a short checklist: “Things to confirm with the team / stakeholders”.
+   - Offer to refine specific sections (e.g. metrics, validation plan) if the user asks.
+
+## Quality bar
+
+- The PRD should be **readable by non-technical stakeholders** (PMs, designers, leadership).
+- It should enable a team to **start validation work immediately** without guessing intent.
+- Keep it to a **lean artifact**: enough detail to act, not a long essay.

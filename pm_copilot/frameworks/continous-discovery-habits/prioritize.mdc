@@ -1,0 +1,103 @@
+---
+description: Prioritization frameworks for Continuous Discovery—RICE, Opportunity Sizing, MoSCoW. Pick one based on context.
+alwaysApply: false
+---
+
+# Continuous Discovery – Prioritize
+
+- **When to use**: The user needs to prioritize opportunities, features, initiatives, or requirements in discovery or planning.
+- **Approach**: Use **one** framework at a time based on context. Pick the one that best fits the situation—don't mix frameworks in a single output unless the user asks.
+
+## Which framework to use
+
+| Context | Best framework | Why |
+|---------|----------------|-----|
+| Comparing multiple opportunities or initiatives | **RICE** | Quantifiable, comparable scores across items with different reach/effort. |
+| Justifying "Why now?" or estimating feature value | **Opportunity Sizing** | Translates user impact into business value (e.g. $, time saved). |
+| Prioritizing requirements or scope for a release/PRD | **MoSCoW** | Clear communication of must vs nice-to-have; good for stakeholder alignment. |
+
+When unclear, default to **RICE** for opportunity comparison, **MoSCoW** for scope/requirements.
+
+---
+
+## Framework 1: RICE Score
+
+Use in **Goals**, **Why Now**, or **Opportunity comparison** sections to justify priority.
+
+**Formula:** `Score = (Reach × Impact × Confidence) / Effort`
+
+- **Reach**: How many users affected per quarter? (e.g. 5,000 users)
+- **Impact**: Per-user impact
+  - 3 = massive | 2 = high | 1 = medium | 0.5 = low | 0.25 = minimal
+- **Confidence**: % certainty in estimates (e.g. 100%, 80%, 50%)
+- **Effort**: Person-months of work (e.g. 2 person-months)
+
+**Higher score = higher priority.**
+
+When applying RICE:
+- State each component explicitly so the score is auditable.
+- Compare scores across opportunities when ranking.
+- Note assumptions; if confidence is low, consider gathering more data before committing.
+
+---
+
+## Framework 2: Opportunity Sizing
+
+Use for **Why Now** or estimating feature value when you need to justify investment.
+
+**Formula:** `Annual Value = (# affected users) × (frequency/year) × (value per instance)`
+
+**Example:** 10,000 users × 52 uses/year × $0.50 saved per use = **$260,000/year** in productivity value.
+
+When applying Opportunity Sizing:
+- Use **conservative** estimates to build credibility.
+- **Show your math**—break down each input so stakeholders can challenge or validate.
+- Express value in terms meaningful to the audience ($ saved, time saved, risk reduced, etc.).
+- Clarify assumptions (e.g. "assumes 50% adoption in year 1").
+
+---
+
+## Framework 3: MoSCoW
+
+Use to communicate **requirement priority** in PRDs, specs, or release plans.
+
+- **Must Have** — Without this, the product fails or launches broken. Non-negotiable for launch.
+- **Should Have** — High value; ship is possible without it, but it matters for success.
+- **Could Have** — Nice to have; cut first when time-crunched.
+- **Won't Have (this time)** — Explicitly deferred to a future version. Out of scope for this release.
+
+When applying MoSCoW:
+- Limit **Must Have** items—too many dilutes the term.
+- Use **Won't Have** deliberately so scope creep is visible and deferred items are tracked.
+- In PRDs, you can map FRs/sections to MoSCoW (e.g. "FR-3: Export to CSV [Should Have]").
+
+---
+
+## Process
+
+1. **Understand the task**
+   - Is the user comparing opportunities? Justifying why now? Defining scope for a release?
+   - Ask if they have a preferred framework.
+
+2. **Pick the framework**
+   - Apply the selection logic above.
+   - Briefly state which framework you're using and why.
+
+3. **Apply the framework**
+   - Fill in inputs (reach, impact, effort, etc.) with the user's data or reasonable assumptions.
+   - If data is missing, note what's needed and use placeholder ranges.
+
+4. **Produce output**
+   - Present a clear, skimmable result (table for RICE, calculation for Opportunity Sizing, list for MoSCoW).
+   - Call out assumptions and confidence so the user can refine.
+
+5. **Optional: combine**
+   - If the user explicitly wants more than one view (e.g. RICE for ranking + MoSCoW for release scope), apply each separately and show both.
+
+---
+
+## Quality bar
+
+- Only **one** primary framework per prioritization exercise unless the user asks for multiple.
+- All inputs and assumptions are **visible and auditable**.
+- The output is **immediately usable** in a PRD, roadmap, or stakeholder doc.
